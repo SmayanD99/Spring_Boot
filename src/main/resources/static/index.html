@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Billet salg Kino</title>
+    <script src="index.js"></script>
+</head>
+<body>
+
+
+<form name = "f1"  onsubmit="validate()">
+    <h1>Bestilling av kinobilleter</h1>
+
+    <h2><label for="movies">Velg film:</label>
+
+        <select name="movies" id="movies">
+            <option value="film1">Shawshank Redemption</option>
+            <option value="film2">Avengers</option>
+            <option value="film3">Batman</option>
+            <option value="film4">Ironman</option>
+        </select>
+    </h2>
+
+    <label>Antall: </label><input type= "number" name= 'antall' size="2"/>
+    <span id="antallVal" style="color: red"></span>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <td align="left">Fornavn: </td>
+            <td align="left"><input type = 'text' name = 'forst'/><span id="forstVal" style="color: red"></span></td>
+        </tr>
+        <tr>
+            <td align="left">Etternavn: </td>
+            <td align="left"><input type = 'text' name = 'etrn'/><span id="etrnVal" style="color: red"></span></td>
+        </tr>
+        <tr>
+            <td align="left">Telefonnr: </td>
+            <td align="left"><input type = 'number' name = 'telephone'/><span id="telephoneVal" style="color: red"></span></td>
+        </tr>
+        <tr>
+            <td align="left">Epost: </td>
+            <td align="left"><input type = 'text' name = 'email'/><span id="emailVal" style="color: red"></span></td>
+        </tr>
+    </table>
+
+    <br>
+    <input type="submit" class="button" value="Kjøp billet">
+</form>
+
+<h1>Alle Billetter</h1>
+<form name = "f2" onsubmit="clear()">
+    <h2><span id="printloc"></span></h2>
+    <button type="submit">Slett alle billettene</button>
+</form>
+
+
+
+</body>
+</html>
