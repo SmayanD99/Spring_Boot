@@ -42,7 +42,7 @@ function validate() {
     if(status === true){
         var array = [];
         array.push(film, amount, first, last, telephone, email)
-        document.getElementById("printloc").innerHTML = array.toString();
+        document.getElementById("printloc").innerHTML = array.join(', ');
     }
 }
 function clear(){
